@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #2d3436;
+}
+
+header {
+  background: #25D366;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.search-bar {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#searchInput {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #25D366;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.bot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.bot-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+}
+
+.bot-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.bot-name {
+  color: #25D366;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.download-btn {
+  display: block;
+  text-align: center;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.download-btn:hover {
+  background: #128C7E;
+}
+
+footer {
+  background: #1e272e;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+  
+  .bot-name {
+    font-size: 1.3rem;
+  }
+}
